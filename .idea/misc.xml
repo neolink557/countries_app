@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/drawable/buttons_style.xml" value="0.2585" />
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/drawable/color_button_style.xml" value="0.197" />
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/drawable/corner_bg.xml" value="0.197" />
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/drawable/crypto_layout.xml" value="0.197" />
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/drawable/ic_city_bg.xml" value="0.197" />
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/layout-v26/coin_fragment.xml" value="0.3625" />
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/layout/activity_location.xml" value="0.3625" />
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/layout/coin_fragment.xml" value="0.3625" />
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/layout/coin_item.xml" value="0.286231884057971" />
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/layout/crypto_layout.xml" value="0.3625" />
+        <entry key="..\:/Documents/Learning/android/app/src/main/res/layout/fragment_location.xml" value="0.25" />
+        <entry key="..\:/Documents/Learning/interviews/softserve/android - Copy/app/src/main/res/drawable/corner_bg.xml" value="0.2935" />
+        <entry key="..\:/Documents/Learning/interviews/softserve/android - Copy/app/src/main/res/drawable/ic_col.xml" value="0.2935" />
+        <entry key="..\:/Documents/Learning/interviews/softserve/android - Copy/app/src/main/res/drawable/ripple_bg.xml" value="0.2935" />
+        <entry key="..\:/Documents/Learning/interviews/softserve/android - Copy/app/src/main/res/layout/activity_location.xml" value="0.3278985507246377" />
+        <entry key="..\:/Documents/Learning/interviews/softserve/android - Copy/app/src/main/res/layout/coin_fragment.xml" value="0.29436679373146973" />
+        <entry key="..\:/Documents/Learning/interviews/softserve/android - Copy/app/src/main/res/layout/coin_item.xml" value="0.3278985507246377" />
+        <entry key="..\:/Documents/Learning/interviews/softserve/android - Copy/app/src/main/res/layout/fragment_location.xml" value="0.3278985507246377" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
