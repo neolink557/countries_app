@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/coinFragment"
-        android:name="com.example.coinapp.ui.coins.CoinFragment"
+        android:name="com.example.coinapp.ui.coins.CountryFragment"
         android:label="coin_fragment"
-        tools:layout="@layout/coin_fragment" >
+        tools:layout="@layout/country_fragment" >
         <argument
             android:name="address"
             app:argType="string"

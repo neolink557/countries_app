@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitHelper {
     fun getRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://pro-api.coinmarketcap.com")
+            .baseUrl("https://countryflagsapi.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

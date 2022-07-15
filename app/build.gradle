@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'androidx.navigation.safeargs'
+    id("com.apollographql.apollo3").version("3.4.0")
 }
 
 android {
@@ -60,13 +61,30 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
 
+    //glide
+    implementation "com.github.bumptech.glide:glide:4.13.0"
+
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+
+    //apollo
+    implementation("com.apollographql.apollo3:apollo-runtime:3.4.0")
+
+    // lifecycle
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
+    
+    //okhttp3
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation "com.squareup.okhttp3:logging-interceptor:4.8.1"
 
     //Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
 
     //for beauty animations ( ͡° ͜ʖ ͡°)
     implementation "com.airbnb.android:lottie:5.1.1"
+}
+
+apollo {
+    packageName.set("com.example.coinapp")
 }
