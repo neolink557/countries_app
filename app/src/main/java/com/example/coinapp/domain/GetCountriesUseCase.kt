@@ -8,5 +8,5 @@ import com.example.coinapp.data.model.countries.CountriesModelList
 class GetCountriesUseCase {
     private val repository = CountriesRepository()
 
-    suspend operator fun invoke(): CountriesModelList = repository.getAllCountries()
+    suspend operator fun invoke(): CountriesModelList? = repository.getAllCountries()
 }

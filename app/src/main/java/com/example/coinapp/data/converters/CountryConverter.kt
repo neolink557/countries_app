@@ -1,9 +1,8 @@
 package com.example.coinapp.data.converters
 
 import com.example.coinapp.GetCountriesQuery
-import com.example.coinapp.data.model.countries.ContinentModel
-import com.example.coinapp.data.model.countries.CountriesModelList
-import com.example.coinapp.data.model.countries.CountryModel
+import com.example.coinapp.GetCountryQuery
+import com.example.coinapp.data.model.countries.*
 
 fun mapCountryToCountryModel(countries: GetCountriesQuery.Data):CountriesModelList {
     var countriesModelList = mutableListOf<CountryModel>()
@@ -15,4 +14,31 @@ fun mapCountryToCountryModel(countries: GetCountriesQuery.Data):CountriesModelLi
         countriesModelList.add(countryModel)
     }
     return CountriesModelList(countriesModelList)
+}
+
+fun mapCountryToCountryDetailModel(country: GetCountryQuery.Data): CountryDetailModel {
+    val countryDetailModel: CountryDetailModel
+    country.country!!.apply {
+        val continentModel = ContinentModel(continent.code, continent.name)
+        val languagesModel = mutableListOf<LanguageModel>()
+        languages.map { language ->
+            languagesModel.add(
+                LanguageModel(
+                    language.code,
+                    language.name.toString(),
+                    language.native.toString()
+                )
+            )
+        }
+
+        countryDetailModel = CountryDetailModel(
+            code,
+            name,
+            currency.toString(),
+            continentModel,
+            LanguagesModel(languagesModel),
+            capital.toString()
+        )
+    }
+    return countryDetailModel
 }

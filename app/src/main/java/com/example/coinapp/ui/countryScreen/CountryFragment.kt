@@ -1,4 +1,4 @@
-package com.example.coinapp.ui.coins
+package com.example.coinapp.ui.countryScreen
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,12 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.coinapp.data.model.countries.CountryModel
 import com.example.coinapp.data.model.states.State
 import com.example.coinapp.databinding.CountryFragmentBinding
-import com.example.coinapp.ui.coins.adapters.CountriesFragmentAdapter
+import com.example.coinapp.ui.countryScreen.adapters.CountriesFragmentAdapter
 
 class CountryFragment : Fragment() {
 
@@ -80,10 +81,8 @@ class CountryFragment : Fragment() {
     }
 
     private fun onCountryItemClicked(country: CountryModel) {
-        //viewModel.getLessonsDetail("BTC")
-        Toast.makeText(requireContext(),country.name,Toast.LENGTH_LONG).show()
-        //val action = HomeFragmentDirections.actionNavigationStudyToLessonsFragmentBottomSheetDialog(coin)
-        //findNavController().navigate(action)
+        val action = CountryFragmentDirections.actionCoinFragmentToCountryDetailFragment2(country.code)
+        findNavController().navigate(action)
     }
 
 }

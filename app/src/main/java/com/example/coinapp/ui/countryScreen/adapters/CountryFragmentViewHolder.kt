@@ -1,4 +1,4 @@
-package com.example.coinapp.ui.coins.adapters
+package com.example.coinapp.ui.countryScreen.adapters
 
 import android.os.Build
 import android.view.View

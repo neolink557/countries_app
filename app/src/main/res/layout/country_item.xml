@@ -9,7 +9,7 @@
     android:layout_marginVertical="10dp"
     app:cardBackgroundColor="@color/black"
     app:cardCornerRadius="20dp"
-    tools:context=".ui.coins.CountryFragment">
+    tools:context=".ui.countryScreen.CountryFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout"
@@ -46,7 +46,6 @@
             android:id="@+id/layoutBg"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/ic_col"
             android:alpha="0.90"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -63,7 +62,6 @@
             android:id="@+id/imageView"
             android:layout_width="35dp"
             android:layout_height="20dp"
-            android:src="@drawable/ic_col"
             app:layout_constraintBottom_toBottomOf="@+id/textViewTittle"
             app:layout_constraintEnd_toStartOf="@+id/guideline8"
             app:layout_constraintStart_toEndOf="@+id/textViewTittle"

@@ -1,4 +1,4 @@
-package com.example.coinapp.ui.coins
+package com.example.coinapp.ui.countryScreen
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -10,7 +10,6 @@ import kotlinx.coroutines.launch
 
 class CoinViewModel : ViewModel() {
     private val countriesUseCase = GetCountriesUseCase()
-
     val countryModel = MutableLiveData<Pair<State, CountriesModelList?>>()
 
 

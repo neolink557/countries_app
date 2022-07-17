@@ -7,12 +7,22 @@
 
     <fragment
         android:id="@+id/coinFragment"
-        android:name="com.example.coinapp.ui.coins.CountryFragment"
+        android:name="com.example.coinapp.ui.countryScreen.CountryFragment"
         android:label="coin_fragment"
         tools:layout="@layout/country_fragment" >
+        <action
+            android:id="@+id/action_coinFragment_to_countryDetailFragment2"
+            app:destination="@id/countryDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/countryDetailFragment"
+        android:name="com.example.coinapp.ui.countryDetailScreen.CountryDetailFragment"
+        android:label="fragment_country_detail"
+        tools:layout="@layout/fragment_country_detail" >
         <argument
-            android:name="address"
-            app:argType="string"
-            app:nullable="true" />
+            android:name="CountryCode"
+            app:argType="string" />
     </fragment>
 </navigation>
